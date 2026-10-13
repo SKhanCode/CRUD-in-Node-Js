@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Project</title>
+    <!-- AddProject wali same CSS link kar rahe hain -->
+    <link rel="stylesheet" href="../AddProject/addproject.css">
+</head>
+<body>
+    <div class="form-container">
+        <button id="backBtn" class="btn-back">← Back to Dashboard</button>
+        <h2>Edit Project</h2>
+
+        <input type="hidden" id="projectId"> <!-- ID chhupa ke rakhne ke liye -->
+
+        <div class="input-group">
+            <label>Project Name:</label>
+            <input type="text" id="projectName">
+        </div>
+        <div class="input-group">
+            <label>Technologies Used:</label>
+            <input type="text" id="projectTech">
+        </div>
+        <div class="input-group">
+            <label>GitHub Repository Link:</label>
+            <input type="url" id="githubLink">
+        </div>
+        <div class="input-group">
+            <label>Project Status:</label>
+            <select id="projectStatus">
+                <option value="Active">Active</option>
+                <option value="Completed">Completed</option>
+                <option value="On Hold">On Hold</option>
+            </select>
+        </div>
+
+        <button id="updateBtn" class="btn-save">Update Project</button>
+    </div>
+    <script src="editproject.js"></script>
+</body>
+</html>

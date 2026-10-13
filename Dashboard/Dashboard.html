@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- CSS file ko link kiya -->
+    <link rel="stylesheet" href="Dashboard.css">
+</head>
+<body>
+
+    <!-- Top Header: User Details & Add Button -->
+    <div class="header">
+        <div class="user-info">
+            <h2>Welcome, Sohel 👋</h2>
+            <p>Admin Dashboard</p>
+        </div>
+        <!-- Button ko ek ID di hai taaki JS se control kar sakein -->
+        <button id="addProjectBtn" class="btn-add">+ Add Project</button>
+    </div>
+
+    <!-- Projects List -->
+    <!--<div class="projects-section">
+        <h3>Your Projects</h3>-->
+    <!-- Project 1 -->
+    <!--<div class="project-card">
+        <h4>Student Management System</h4>
+        <p><strong>Tech:</strong> C#, ASP.NET MVC, SQL Server</p>
+        <p><strong>Status:</strong> Active</p>
+    </div>-->
+    <!-- Project 2 -->
+    <!--<div class="project-card">
+            <h4>Personal Portfolio Website</h4>
+            <p><strong>Tech:</strong> HTML5, CSS, JavaScript</p>
+            <p><strong>Status:</strong> Completed</p>
+        </div>
+    </div>-->
+    <div class="projects-section">
+        <h3>Your Projects</h3>
+        <!-- Puraane dummy cards yahan se delete kar do aur yeh khali div daal do -->
+        <div id="projectList"></div>
+    </div>
+
+    <!-- JS file ko link kiya (hamesha body ke end mein) -->
+    <script src="Dashboard.js"></script>
+</body>
+</html>
